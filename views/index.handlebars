@@ -4,7 +4,10 @@
 
 <ul>
   {{#each burgers}}
-  {{li}}
+    {{#if false}}
+    {{else}}
+    <li>{{burger_name}}</li>
+    {{/if}}
   {{/each}}
 </ul>
 
@@ -13,6 +16,7 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
+  <li>{{burger_name}}</li>
   {{/if}}
   {{/each}}
 </ul>
